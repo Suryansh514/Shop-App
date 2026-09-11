@@ -38,8 +38,8 @@ const orderSchema = new mongoose.Schema(
     deliveryAddress: { type: String, default: "" },
     paymentMethod: {
       type: String,
-      enum: ["CASH_ON_DELIVERY", "STRIPE"], // Phase 12 Payments
-      default: "CASH_ON_DELIVERY",
+      enum: ["CASH_ON_DELIVERY", "UPI_RAZORPAY", "STRIPE"],
+      default: "CASH_ON_DELIVERY"
     },
     isPaid: { type: Boolean, default: false },
   },
