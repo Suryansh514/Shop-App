@@ -9,7 +9,7 @@ import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ForgotPassword from "./pages/ForgotPassword";
-import ShopkeeperDashboard from "./pages/ShopkeeperDashboard";
+import ShopkeeperDashboard from "./pages/Dashboard";
 
 function ProtectedRoute({ children, role }) {
   const { user } = useAuth();
